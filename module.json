@@ -1,7 +1,7 @@
 {
     "name": "Property",
-    "alias": "property",
-    "description": "",
+    "alias": "church-property",
+    "description": "Property module",
     "keywords": [],
     "priority": 0,
     "providers": [
