@@ -8,5 +8,5 @@ use Filament\Support\Icons\Heroicon;
 
 class PropertyCluster extends Cluster
 {
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedSquares2x2;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedBuildingOffice2;
 }

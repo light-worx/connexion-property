@@ -14,7 +14,7 @@ class Venue extends Model implements Resourceable
     public $table = 'venues';
     protected $guarded = ['id'];
 
-    public function toCalendarResource(): CalendarResource|array {
+    public function toCalendarResource(): CalendarResource {
         return CalendarResource::make($this)
             ->title($this->venue);
     }
