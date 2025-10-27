@@ -2,7 +2,7 @@
 
 namespace Modules\Property\Models;
 
-use Modules\Property\Traits\Taggable;
+use App\Traits\Taggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
