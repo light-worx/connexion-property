@@ -1,6 +1,6 @@
 {
     "name": "light-worx/connexion-property",
-    "description": "",
+    "description": "Property module for Connexion church management software",
     "authors": [
         {
             "name": "Michael Bishop",
