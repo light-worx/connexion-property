@@ -2,6 +2,7 @@
 
 namespace Modules\Property\Providers;
 
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Nwidart\Modules\Traits\PathNamespace;
@@ -27,6 +28,10 @@ class PropertyServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->name, 'database/migrations'));
+        Relation::morphMap([
+            'tenant' => 'Modules\Property\Models\Tenant',
+            'venue' => 'Modules\Property\Models\Venue'
+        ]);
     }
 
     /**
